@@ -5,7 +5,10 @@ gem 'rails', '3.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
   gem 'sqlite3'
   gem "unicorn", "~> 4.6.2"
