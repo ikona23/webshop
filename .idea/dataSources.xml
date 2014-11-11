@@ -3,8 +3,9 @@
   <component name="DataSourceManagerImpl" format="xml" hash="4185027220">
     <data-source source="LOCAL" name="Rails bbsk: development" uuid="bc5ad15d-fd52-4a97-8fe3-7d5d9d3ea72e">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:bbsk_development</jdbc-url>
+      <user-name>Core</user-name>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails bbsk: test" uuid="6aa0244c-6217-425c-8acb-15d22a4bc12a">
