@@ -1,0 +1,67 @@
+﻿cs:
+
+  thanks: "Děkujeme za objednávku"
+
+  activerecord:
+    models:
+      order: "Objednávka"
+    attributes:
+      order:
+        address: "Adresa"
+        name: "Jméno"
+        email: "E-mail"
+        pay_type: "Typ platby"
+    errors:
+      messages:
+        inclusion: "není v seznamu"
+        blank: "nesmí být prázdné"
+  errors:
+    template:
+      body: "Vyskytly se problémy s následujícími poli:"
+      header:
+        one: "%{model}: 1 chyba znemožnila uložení"
+        other: " %{model}: nelze uložit, počet chyb: %{count}"
+
+  helpers:
+    label:
+      order:
+        name: "Jméno"
+        address: "Adresa"
+        email: "E-mail"
+        pay_type: "Typ platby"
+
+  orders:
+    new:
+      legend: "Zadejte prosím své údaje"
+    form:
+      pay_prompt: "Zvolte metodu platby"
+      submit: "Závazně objednat"
+
+  number:
+    currency:
+      format:
+        unit: "Kč"
+        precision: 2
+        separator: ","
+        delimiter: " "
+        format: "%n&nbsp;%u"
+
+  carts:
+    cart:
+      title: "Nákupní košík"
+      total: "Celkem"
+      empty: "Vyprázdnit košík"
+      checkout: "Objednat"
+
+  store:
+    index:
+      title_html: "Seznam produktů"
+      add_html: "Přidat do košíku"
+
+  layouts:
+    application:
+      title: "Pragmatická knihovna"
+      home: "Úvod"
+      questions: "Otázky"
+      news: "Novinky"
+      contact: "Kontakt"

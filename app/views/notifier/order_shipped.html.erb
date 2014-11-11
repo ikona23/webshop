@@ -1,0 +1,12 @@
+﻿<h3>Objednávka na webu Pragmatická knihovna byla odeslána</h3>
+<p>
+  Oznamujeme Vám, že Vaše objednávka byla odeslána:
+</p>
+
+<table>
+  <tr>
+    <th colspan="2" >Množství</th>
+    <th>Popis</th>
+  </tr>
+  <%= render @order.line_items %>
+</table>

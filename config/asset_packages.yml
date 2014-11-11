@@ -1,0 +1,15 @@
+---
+javascripts:
+- base:
+  - jquery_ujs
+  - jquery.min
+  - jquery
+  - jquery-ui.min
+  - jquery-ui
+  - application
+stylesheets:
+- base:
+  - depot
+  - scaffold
+uploads:
+- images

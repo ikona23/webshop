@@ -1,0 +1,30 @@
+﻿<h1>Výpis objednávok</h1>
+
+<table>
+  <tr>
+    <th>Mono</th>
+    <th>Adresa</th>
+    <th>E-mail</th>
+    <th>Typ platby</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orders.each do |order| %>
+  <tr>
+    <td><%= order.name %></td>
+    <td><%= order.address %></td>
+    <td><%= order.email %></td>
+    <td><%= order.pay_type %></td>
+    <td><%= link_to 'Zobrazit', order %></td>
+    <td><%= link_to 'Upravit', edit_order_path(order) %></td>
+    <td><%= link_to 'Odstranit', order, :confirm => 'Opravdu odstranit?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nová objednávka', new_order_path %>
+<p><%= will_paginate @orders %></p>
