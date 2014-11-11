@@ -9,8 +9,9 @@
     </data-source>
     <data-source source="LOCAL" name="Rails bbsk: test" uuid="6aa0244c-6217-425c-8acb-15d22a4bc12a">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:bbsk_test</jdbc-url>
+      <user-name>Core</user-name>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails bbsk: production" uuid="fb81735d-727f-4078-9aa0-ec91594b5be3">
