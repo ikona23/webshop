@@ -7,11 +7,7 @@ gem 'rails', '3.2'
 
 group :production do
   gem 'pg'
-end
 
-group :development, :test do
-  gem 'sqlite3'
-  gem "unicorn", "~> 4.6.2"
 end
 
 # Use unicorn as the web server
